@@ -3,7 +3,7 @@ defmodule Api.DomainView do
   alias Api.DomainView
 
   def render("error.json", %{error: error}) do
-    %{error: error}
+    %{status: error}
   end
 
   def render("create.json", _) do
